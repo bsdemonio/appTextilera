@@ -6,7 +6,7 @@ class IndexController extends Zend_Controller_Action
     {
         $this->_helper->layout()->disableLayout();
         $this->_helper->viewRenderer->setNoRender();
-        echo json_encode(array('ERROR'=>false, 'MSG'=>'index content from zend'));
+        echo json_encode(array('ERROR'=>false, 'MSG'=>'index content from new folder '));
     }
 }
 
