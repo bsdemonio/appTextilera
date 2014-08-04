@@ -1,0 +1,11 @@
+SetEnv APPLICATION_ENV local
+
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_METHOD} !^(GET|POST|OPTIONS|PUT)$ [NC]
+RewriteRule .? - [F,L]
+
+AddDefaultCharset utf-8
+
+RewriteRule !\.(js|ico|txt|gif|jpg|png|css|pdf|woff|eot|svg|ttf|html)$ index.php
